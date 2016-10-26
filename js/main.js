@@ -5,6 +5,7 @@ function validateForm(){
 	var nombre = document.getElementById("name");
 	var apellido = document.getElementById("lastname");
 	var email = document.getElementById("input-email").value;
+	var indice = document.getElementById("selector").selectedIndex;
 	// validar datos
 
 // nombre
@@ -67,4 +68,12 @@ function validateForm(){
 	limitada();
 
 /* validar una opcion de la lista */
+
+function seleccion(){
+	if (indice == null || indice == 0){
+	alert("No haz seleccionado una opción, elige una");
+		return false;
+	}
+}
+seleccion();
 }
